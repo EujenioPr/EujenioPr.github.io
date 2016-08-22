@@ -1,0 +1,490 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+p {
+  font-size: 20px;
+  margin: 0 20% 0 20%; }
+
+header {
+  background: url(../images/header/header.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+nav {
+  display: inline-block;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  top: 0;
+  left: 0; }
+  @media only screen and (max-width: 400px) {
+    nav {
+      background: white;
+      position: fixed;
+      box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+      z-index: 100; } }
+  nav a {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Nexa Light";
+    color: #f5f5f5;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    text-decoration: none; }
+    @media only screen and (min-height: 800px) and (max-height: 1080px) {
+      nav a {
+        margin: 1.5% 1% 1% 1%; } }
+    @media only screen and (width: 1280px) {
+      nav a {
+        margin-top: 2%; } }
+    @media only screen and (width: 1024px) {
+      nav a {
+        margin-top: 2%; } }
+    @media only screen and (max-width: 400px) {
+      nav a {
+        display: none; } }
+    nav a:last-child {
+      margin-right: 0; }
+    nav a:hover {
+      color: black;
+      transition-duration: 0.4s; }
+
+.nav-border {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  border-bottom: 1px solid #f5f5f5; }
+  @media only screen and (max-width: 400px) {
+    .nav-border {
+      display: none; } }
+
+.logo {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 5%; }
+  @media only screen and (width: 1280px) {
+    .logo {
+      padding-top: 15%; } }
+  @media only screen and (width: 1024px) {
+    .logo {
+      padding-top: 13%; } }
+  @media only screen and (max-width: 400px) {
+    .logo {
+      padding-top: 30%; } }
+
+.head-title {
+  margin-top: 3%;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-family: "Nexa light";
+  font-weight: normal;
+  color: white; }
+  @media only screen and (max-width: 400px) {
+    .head-title nextstep {
+      float: left;
+      margin-left: 2%; } }
+  .head-title span {
+    font-family: "Nexa bold";
+    font-weight: bold; }
+    @media only screen and (max-width: 400px) {
+      .head-title span {
+        text-align: center; } }
+
+.scroller-first {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Nexa Light";
+  color: white; }
+
+.scroller-second {
+  position: absolute;
+  bottom: -105%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Nexa Light";
+  color: #7e7e7e; }
+  @media only screen and (width: 1280px) {
+    .scroller-second {
+      bottom: -103%; } }
+  @media only screen and (width: 1600px) {
+    .scroller-second {
+      bottom: -104%; } }
+
+.scroller-third {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Nexa Light";
+  color: #d7d7d7;
+  left: 0;
+  right: 0;
+  top: 300%; }
+
+section {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+.sec_one {
+  text-decoration: none;
+  font-family: "Nexa Light"; }
+
+.wrapper-about h1 {
+  padding-top: 4%;
+  font-size: 50px; }
+  @media only screen and (width: 1024px) {
+    .wrapper-about h1 {
+      padding-top: 1%;
+      margin-bottom: 1%; } }
+.wrapper-about p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-right: 10%;
+  color: #474747; }
+  .wrapper-about p span {
+    font-family: cursive;
+    float: left; }
+    @media only screen and (width: 1024px) {
+      .wrapper-about p span {
+        float: right; } }
+
+#wrapper {
+  display: block;
+  width: 80%;
+  height: 65%;
+  margin: auto;
+  position: relative;
+  top: 10%; }
+  @media only screen and (width: 1024px) {
+    #wrapper {
+      top: 15%; } }
+  #wrapper img {
+    max-width: 45%;
+    max-height: 50%;
+    float: left;
+    margin-right: 4%;
+    border-right: 1px solid #cfcfcf;
+    padding-right: 4%; }
+    @media only screen and (width: 1024px) {
+      #wrapper img {
+        max-width: 50%;
+        margin-right: 2%; } }
+
+.sec_two {
+  background: url(../images/forest_rump.jpg) no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 0 0 700px rgba(0, 0, 0, 0.5) inset; }
+
+.sec_work {
+  overflow-x: hidden;
+  text-decoration: none;
+  text-transform: none;
+  color: #f2f2f2;
+  font-family: "Nexa Light";
+  font-size: 16px; }
+
+.work-belt {
+  width: 200%;
+  position: relative;
+  left: 0%;
+  transition: all 300ms ease; }
+
+.thumb-wrap, .work-wrap {
+  width: 50%;
+  float: left; }
+
+.work-container {
+  max-width: 600px;
+  margin: 0px auto;
+  display: none; }
+  .work-container p {
+    font-family: "Nexa Light";
+    margin: 3% 0 7% 0; }
+  .work-container h4 {
+    font-family: "Nexa Bold";
+    color: #f2f2f2;
+    font-size: 25px; }
+  .work-container img {
+    max-width: 100%;
+    margin-bottom: 200px; }
+
+#work-return {
+  cursor: pointer;
+  max-width: auto;
+  margin-bottom: 0;
+  margin-right: 4%;
+  transition-duration: 0.2s; }
+  #work-return:hover {
+    transform: translate(-2px, -2px); }
+
+#portfolio {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Nexa Light";
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  padding-top: 5%; }
+
+.thumb-container {
+  max-width: 90%;
+  margin: 0px auto;
+  margin-top: 1%;
+  padding-bottom: 100px; }
+  .thumb-container .thumb-unit {
+    display: block;
+    width: 16%;
+    float: left;
+    margin: 1.8%;
+    position: relative;
+    padding-top: 14%;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .thumb-container .thumb-unit .thumb-overlay {
+      position: absolute;
+      top: 100%;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding-top: 20%;
+      font-family: "Nexa Light";
+      font-size: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      transition: ease-in-out 0.2s; }
+    .thumb-container .thumb-unit:hover .thumb-overlay {
+      position: absolute;
+      top: 0%; }
+      .thumb-container .thumb-unit:hover .thumb-overlay strong {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Nexa Light";
+        font-size: 25px;
+        color: white; }
+
+#contact-wrapper-left {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-family: "Nexa Light"; }
+  #contact-wrapper-left em {
+    text-transform: none;
+    font-family: "serif";
+    color: #989898;
+    font-size: 15px;
+    font-weight: normal; }
+
+#contact {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 4% 0 0% 0;
+  font-size: 50px;
+  font-family: "Nexa Light";
+  font-weight: normal; }
+
+.contact-inp {
+  outline: none;
+  width: 40%;
+  height: 30px;
+  font-size: 23px;
+  font-family: "Nexa Light";
+  border: 1px solid #676767;
+  border-radius: 1px;
+  margin-top: 1%;
+  padding: 5px;
+  background-color: #fefefe;
+  color: black; }
+
+.contact-ta {
+  margin-top: 2%;
+  max-width: 50%;
+  overflow: auto;
+  resize: none;
+  background-color: #fcfcfc;
+  color: black;
+  font-size: 20px;
+  font-family: "Nexa Light";
+  border: 1px solid #676767;
+  border-radius: 1px;
+  outline: none;
+  vertical-align: text-bottom;
+  padding: 9px; }
+  @media only screen and (width: 1024px) {
+    .contact-ta {
+      max-width: 60%; } }
+
+.disp-none {
+  color: transparent; }
+
+input[type="radio"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-color: black; }
+
+#submit-btn {
+  height: 45px;
+  width: 100px;
+  border: none;
+  border-radius: 1px;
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 16px;
+  font-family: "Nexa bold";
+  text-transform: uppercase;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  outline: none; }
+  #submit-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s; }
+    #submit-btn span::after {
+      content: "»";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s; }
+  #submit-btn:hover span {
+    padding-right: 20px; }
+    #submit-btn:hover span::after {
+      opacity: 1;
+      right: 0; }
+  #submit-btn:hover {
+    opacity: 0.9; }
+
+.gender {
+  font-size: 16px; }
+
+.error {
+  color: red;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: arial; }
+
+#contact-wrapper-right {
+  float: right;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 16px;
+  font-family: "Nexa Light"; }
+
+#map {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 60%;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-shadow: 2px 2px 20px black;
+  margin-bottom: 4%; }
+
+#location {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 4% 0 4% 0;
+  font-size: 50px;
+  font-family: "Nexa Light";
+  font-weight: normal; }
+
+.address {
+  font-family: "Nexa Bold"; }
+
+footer {
+  display: inline-block;
+  border-top: 1px solid black;
+  background-color: black;
+  background-size: cover;
+  box-shadow: 0 0 0 700px rgba(0, 0, 0, 0.6) inset;
+  width: 100%;
+  height: 26%;
+  color: white;
+  text-align: center; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+  footer h3 {
+    display: block;
+    float: left;
+    margin: 3% 0 0 5%;
+    padding: 2%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Nexa Bold";
+    font-size: 35px;
+    letter-spacing: 3px;
+    border: 1px solid white; }
+    @media only screen and (width: 1024px) {
+      footer h3 {
+        margin-top: 4%; } }
+
+.footer-mail {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 0;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: serif; }
+
+.legal {
+  margin-top: 2%;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: "Nexa Light"; }
+
+/*# sourceMappingURL=style.css.map */
